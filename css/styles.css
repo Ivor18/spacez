@@ -1,0 +1,102 @@
+.navbar{
+	background-color: rgba(0,0,0,0.6);
+}
+.fixed-top.scrolled {
+  background-color: rgba(2,22,42,0.8);
+  transition: background-color 200ms linear;
+}
+.flx1{
+	display: flex;
+	flex-wrap: nowrap;
+	justify-content: flex-end;
+
+	width:100%;
+flex-basis: 100%;
+}
+#navb{
+	flex:4 1 75%;
+}
+
+
+.main{
+    position:absolute;
+    min-height: 100vh;
+    width: 100%;
+     color: #fff;
+     background-color:#000;
+    justify-content: center;
+    text-align: center;
+     background-size: 100%;
+background-repeat: no-repeat;
+    animation:1s backfade forwards;
+    transition: background-size 500ms ease-in;
+}
+
+.main h1{
+    font: bold 60px "Open Sans", sans-serif;
+  
+}
+.main h3{
+    font: normal 28px "Open Sans", sans-serif;
+   
+}
+.main a.btn{
+    padding: 20px 46px;
+}
+.main-content{
+    /*animation: 1s slidefade 1s forwards;*/
+}
+#h1{
+	opacity:0;
+	animation: 1s slidefade 1s forwards;
+}
+#h3{
+	opacity:0;
+	animation: 1s slidef 1s forwards;	
+}
+@keyframes slidefade{
+    0%{
+    	opacity:0;
+    	transform: translateY(500px);
+    }
+    100%{
+        opacity: 1;
+       transform: translateY(240px);
+    }
+}
+@keyframes slidef{
+	0%{
+		opacity:0;
+    	transform: translateY(0px);
+	}
+    100%{
+        opacity: 1;
+     transform: translateY(250px);
+    }
+}
+@keyframes backfade{
+	0%{
+		opacity:0;
+		color:#fff;
+		
+		
+	}
+
+	50%{
+		opacity: 0.75;
+		
+		background-image: url("../img/bc.jpg");
+	}
+	95%{
+		color:#fff;
+	}
+	100%{
+		opacity: 1;
+		color:#111;
+		background-image:  url("../img/bc.jpg");
+		
+	}
+}
+.btn-outline-warning{
+	margin: auto 5px;
+}
