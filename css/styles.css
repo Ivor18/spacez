@@ -5,7 +5,7 @@ body,html{
   width: 100%;
 }
 .section{
-margin:50px 50px;
+margin:5% auto;
 display: flex;
 flex-wrap: nowrap;
 justify-content: space-around;
