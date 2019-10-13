@@ -1,16 +1,17 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>SpaceZ</title>
-	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
-	<link rel="stylesheet" type="text/css" href="css/styles.css">
-	 <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
-	 <script type="text/javascript" src="js/jquery.js"></script>
-	  <script type="text/javascript" src="js/jquery.backgroundMove.js"></script>
+  <title>SpaceZ</title>
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="css/styles.css">
+   <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+   <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/jquery.backgroundMove.js"></script>
 </head>
-<body>
+<body class="bg">
+
 <nav class="navbar navbar-expand-sm fixed-top navbar-dark">
-	<div class="container">
+  <div class="container">
   <ul class="navbar-nav flx1">
     <li class="nav-item" id="navb">
       <a class="navbar-brand" href="#">SPACE Z</a>
@@ -27,19 +28,43 @@
   </ul>
 </div>
 </nav>
+
  <section class="main">
      
     <div class="main-content">
       <h1 id="h1">SPACE Z</h1>
       </div>
       <div class="main-content">
-      	<h2 id="h3">Future of Space Travel</h2>
+        <h2 id="h3">Future of Space Travel</h2>
       </div>
     </section>
+    <div class="row section container">
+    <div class="item">
+      <h1>Option 1</h1>
+      <h3>Details</h3>
+      
+    </div>
+     <div class="item">
+      <h1>Option 2</h1>
+      <h3>Details</h3>
+      
+    </div>
+     <div class="item">
+      <h1>Option 3</h1>
+      <h3>Details</h3>
+      
+    </div>
+</div>
       <script type="text/javascript">
-    	$('.main').backgroundMove({
-    		movementStrength:'50'
-    	});
+      $('.bg').backgroundMove({
+        movementStrength:'50'
+      });
+//      $(window).scroll(function(){
+//     $(".bg")
+//       .css("background-size", (100-100 * $(window).scrollTop() / 450) + "%")
+//       .css("background-position",(500+"px",(100+ 100 * $(window).scrollTop()/300)+"px"));
+
+// });
     </script>
 </body>
 </html>
