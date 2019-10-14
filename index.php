@@ -8,7 +8,7 @@
    <script type="text/javascript" src="js/jquery.js"></script>
     <script type="text/javascript" src="js/jquery.backgroundMove.js"></script>
 </head>
-<body class="bg">
+<body>
 
 <nav class="navbar navbar-expand-sm fixed-top navbar-dark">
   <div class="container">
@@ -28,7 +28,7 @@
   </ul>
 </div>
 </nav>
-
+<div class="bg"></div>
  <section class="main">
      
     <div class="main-content">
@@ -38,7 +38,7 @@
         <h2 id="h3">Future of Space Travel</h2>
       </div>
     </section>
-    <div class="row section container">
+    <div class="section">
     <div class="item">
       <h1>Option 1</h1>
       <h3>Details</h3>
@@ -56,15 +56,15 @@
     </div>
 </div>
       <script type="text/javascript">
-      $('.bg').backgroundMove({
-        movementStrength:'50'
-      });
-//      $(window).scroll(function(){
-//     $(".bg")
-//       .css("background-size", (100-100 * $(window).scrollTop() / 450) + "%")
-//       .css("background-position",(500+"px",(100+ 100 * $(window).scrollTop()/300)+"px"));
+      // $('.bg').backgroundMove({
+      //  movementStrength:'50'
+      // });
+      $(window).scroll(function(){
+        console.log($(window).scrollTop());
+    $(".bg")
+      .css("transform", "scale("+(1-$(window).scrollTop()*0.001)+") translateY("+(1.5*$(window).scrollTop())+"px)")
 
-// });
+});
     </script>
 </body>
 </html>
