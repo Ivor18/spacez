@@ -29,15 +29,20 @@
 </div>
 </nav>
 <div class="bg"></div>
+   
+      <video autoplay muted loop id="myVideo">
+  <source src="vvv.mp4" type="video/mp4">
+    </video>
+
  <section class="main">
-     
+   
     <div class="main-content">
       <h1 id="h1">SPACE Z</h1>
       </div>
       <div class="main-content">
         <h2 id="h3">Future of Space Travel</h2>
       </div>
-    </section>
+ </section>
     <div class="section">
     <div class="item">
       <h1>Option 1</h1>
@@ -62,7 +67,8 @@
       $(window).scroll(function(){
         console.log($(window).scrollTop());
     $(".bg")
-      .css("transform", "scale("+(1-$(window).scrollTop()*0.001)+") translateY("+(1.5*$(window).scrollTop())+"px)")
+      .css("transform", "scale("+(1-$(window).scrollTop()*0.001)+") translateY("+(1.5*$(window).scrollTop())+"px)");
+      
 
 });
     </script>

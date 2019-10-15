@@ -10,7 +10,7 @@ background-color: #000;
   border-radius: 10%;
 }
 .section{
-  z-index: 2;
+  z-index: 3;
   position: absolute;
   width: 100%;
   height: 100%;
@@ -24,20 +24,30 @@ align-items: center;
 height: 100%;
 
 }
+#myVideo{
+
+  position: fixed;
+  z-index: 1;
+  
+ 
+  height: 100vh;
+  width: 100%;
+
+}
 
 .bg{
-  z-index: 1;
+  z-index: 2;
   width: 100%;
   height: 200%;
   position: absolute;
   right: 1%; 
   background-position: center;
 background-origin:content-box;
-background-color: #000;
+
        background-size: cover;
 background-repeat: no-repeat;
-
-background-image:  url("../img/bc.jpg");
+overflow: hidden;
+background-image:  url("../img/bc.png");
  /*   animation:1s backfade forwards;*/
     transition: background-size 500ms ease-in;
 }
@@ -63,7 +73,7 @@ flex-basis: 100%;
 
 
 .main{
-z-index: 2;
+z-index: 4;
   position: relative;
    justify-content: center;
   text-align: center;
