@@ -17,7 +17,7 @@
       <a class="navbar-brand" href="#">SPACE Z</a>
     </li>
     <li class="nav-item">
-      <a class="nav-link btn btn-outline-warning" href="#">Gallery</a>
+      <a class="nav-link btn btn-outline-warning" href="gallery.html">Gallery</a>
     </li>
      <li class="nav-item">
       <a class="nav-link btn btn-outline-warning" href="#">Resouces</a>
