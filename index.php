@@ -20,7 +20,7 @@
       <a class="nav-link btn btn-outline-warning" href="gallery.html">Gallery</a>
     </li>
      <li class="nav-item">
-      <a class="nav-link btn btn-outline-warning" href="#">Resouces</a>
+      <a class="nav-link btn btn-outline-warning" href="book.html">Book a Seat</a>
     </li>
     <li class="nav-item">
       <a class="nav-link btn btn-outline-warning" href="#">About us</a>
