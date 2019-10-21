@@ -45,17 +45,17 @@
  </section>
     <div class="section">
     <div class="item">
-      <h1>Option 1</h1>
+      <h1>Booking</h1>
       <h3>Details</h3>
       
     </div>
      <div class="item">
-      <h1>Option 2</h1>
+      <h1>Shop</h1>
       <h3>Details</h3>
       
     </div>
      <div class="item">
-      <h1>Option 3</h1>
+      <h1>About</h1>
       <h3>Details</h3>
       
     </div>
@@ -67,7 +67,7 @@
       $(window).scroll(function(){
         console.log($(window).scrollTop());
     $(".bg")
-      .css("transform", "scale("+(1-$(window).scrollTop()*0.001)+") translateY("+(1.5*$(window).scrollTop())+"px)");
+      .css("transform", "scale("+(1-$(window).scrollTop()*0.001)+") translateY("+(0.225*$(window).scrollTop())+"px)");
       
 
 });
