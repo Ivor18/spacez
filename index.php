@@ -20,7 +20,7 @@
       <a class="nav-link btn btn-outline-warning" href="gallery.html">Gallery</a>
     </li>
      <li class="nav-item">
-      <a class="nav-link btn btn-outline-warning" href="book.html">Book a Seat</a>
+      <a class="nav-link btn btn-outline-warning" href="choose.html">Book a Seat</a>
     </li>
     <li class="nav-item">
       <a class="nav-link btn btn-outline-warning" href="#">About us</a>
@@ -60,14 +60,14 @@
       
     </div>
 </div>
-      <script type="text/javascript">
+   <script type="text/javascript">
       // $('.bg').backgroundMove({
       //  movementStrength:'50'
       // });
       $(window).scroll(function(){
         console.log($(window).scrollTop());
     $(".bg")
-      .css("transform", "scale("+(1-$(window).scrollTop()*0.001)+") translateY("+(0.225*$(window).scrollTop())+"px)");
+      .css("transform", "scale("+(1-$(window).scrollTop()*0.001)+") translateY("+(0.225*$(window).scrollTop())+"vh)");
       
 
 });
