@@ -2,7 +2,13 @@ body,html{
   height:100%;
 background-color: #000;
 }
-
+.fs{
+    align-self: flex-start;
+    
+}
+.fs{
+    align-self: flex-end;
+}
 .item{
 
   background-color: rgba(125,125,125,0.5);
@@ -10,19 +16,56 @@ background-color: #000;
   border-radius: 10%;
 }
 .section{
+    top:50vh;
   z-index: 3;
-  position: absolute;
-  width: 100%;
+  position: relative;
+  width: 80%;
   height: 100%;
 
-
+left: 20vh;
 display: flex;
+    flex-direction: column;
 flex-wrap: nowrap;
-justify-content: space-around;
-align-items: center;
 
-height: 100%;
+flex-basis: 100%;
+flex-flow: column;
 
+}
+a>img{
+    height: 8vh;
+  
+}
+
+/*
+
+section {
+opacity: 0;
+right:30vh;    
+transition: all 1s ease-in;
+}
+
+section.visible { 
+opacity: 1;
+  right:0vh;
+}
+*/
+
+#content1{
+     background-color: rgba(204,255,0,0.8);
+  transition: 1s ;
+}
+#content2{
+     background-color: rgba(0,255,255,0.8);
+}
+#content3{
+     background-color: rgba(204,0,255,0.8);
+}
+#content4{
+     background-color: rgba(255,204,0,0.8);
+}
+.jumbotron{
+    background-color: rgba(125,125,125,0.5);
+    width: 32%;
 }
 #myVideo{
 
@@ -33,6 +76,17 @@ height: 100%;
   height: 100vh;
   width: 100%;
 
+}
+.logo{
+    display: none;
+     position: absolute;
+    width: 100%;
+    left:13vh;
+    top:53vh;
+    height: 100%;
+    background-repeat: no-repeat;
+     z-index: 3;
+    background-image:  url("../img/Blue.png");
 }
 
 .bg{
@@ -48,6 +102,7 @@ background-origin:content-box;
 background-repeat: no-repeat;
 overflow: hidden;
 background-image:  url("../img/bc.png");
+
  /*   animation:1s backfade forwards;*/
     transition: background-size 500ms ease-in;
 }
@@ -99,27 +154,27 @@ height: 100%;
 }
 .main h1{
     font: bold 60px "Open Sans", sans-serif;
-  -webkit-text-stroke: 1px black;
-   color: white;
+  -webkit-text-stroke: 1px navy;
+   color: #006994;
    text-shadow:
-       3px 3px 0 #000,
-     -1px -1px 0 #000,  
-      1px -1px 0 #000,
-      -1px 1px 0 #000,
-       1px 1px 0 #000;
+       3px 3px 0 #222,
+     -1px -1px 0 #222,  
+      1px -1px 0 #222,
+      -1px 1px 0 #222,
+       1px 1px 0 #222;
 
   
 }
 .main h2{
     font: normal 35px "Open Sans", sans-serif;
-     -webkit-text-stroke: 1px black;
-   color: white;
+     -webkit-text-stroke: 1px navy;
+   color: #006994;
    text-shadow:
-       3px 3px 0 #000,
-     -1px -1px 0 #000,  
-      1px -1px 0 #000,
-      -1px 1px 0 #000,
-       1px 1px 0 #000;
+       3px 3px 0 #222,
+     -1px -1px 0 #222,  
+      1px -1px 0 #222,
+      -1px 1px 0 #222,
+       1px 1px 0 #222;
    
 }
 h1{
@@ -174,6 +229,9 @@ h1{
     
   }
 }*/
-.btn-outline-warning{
-  margin: auto 5px;
+#n3{
+    color:yellow:
+}
+.btn{
+    margin: auto 2vh;
 }
